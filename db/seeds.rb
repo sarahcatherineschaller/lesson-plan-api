@@ -19,6 +19,6 @@ lesson_plans = LessonPlan.create(
 			objective: "Students will use factoring in solving polynomial equations; Students will solve real world problems by writing and factoring equations",
 			materials: "Textbook, calculators, algebra tiles",
 			summary: "Students will apply order of operations, real number properties, and rules of exponents to simplify algebraic expressions; Students will factor quadratic polynomials of all different patterns",
-			other: nil
+			other: " "
 		}
 	])
