@@ -21,9 +21,15 @@ module Api::V1
 		end
 
 		def update 
+			if @lesson_plan.update(lesson_plan_params)
+				render json: @lesson_plan 
+			else 
+				render json: {message: lesson_plan.errors}, status: 400 
+			end
 		end
 
 		def destroy 
+			@lesson_plan.destroy
 		end
 
 		private 
