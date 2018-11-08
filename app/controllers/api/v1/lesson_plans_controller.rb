@@ -3,7 +3,7 @@ module Api::V1
 		before_action :set_lesson_plan, only: [:show, :update, :destroy]
 
 		def index 
-			@lesson_plans = LessonPlan.all 
+			@lesson_plans = LessonPlan.order("created_at DESC")
 			render json: @lesson_plans 
 		end
 
