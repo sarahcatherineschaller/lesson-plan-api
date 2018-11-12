@@ -38,7 +38,7 @@ module Api::V1
 		end
 
 		def lesson_plan_params 
-			params.require(:lesson_plan).permit(:title, :grade_level, :subject, :total_time, :objective, :materials, :summary, :other)
+			params.require(:lesson_plan).permit(:title, :grade_level, :subject, :total_time, :objective, :materials, :summary, :other, :count)
 		end
 	end 
 end
